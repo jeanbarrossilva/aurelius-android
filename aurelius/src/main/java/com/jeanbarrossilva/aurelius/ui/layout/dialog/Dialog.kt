@@ -42,6 +42,8 @@ fun Dialog(
     modifier: Modifier = Modifier,
     buttons: @Composable (RowScope.() -> Unit)? = null
 ) {
+    AureliusTheme.requireFor("Dialog")
+
     Dialog(onDismissalRequest) {
         Column(
             modifier

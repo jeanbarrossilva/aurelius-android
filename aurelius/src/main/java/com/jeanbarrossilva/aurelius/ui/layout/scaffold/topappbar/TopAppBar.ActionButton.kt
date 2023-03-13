@@ -33,6 +33,8 @@ fun ActionButton(
     modifier: Modifier = Modifier,
     content: @Composable () -> Unit
 ) {
+    AureliusTheme.requireFor("ActionButton")
+
     IconButton(
         onClick,
         modifier
